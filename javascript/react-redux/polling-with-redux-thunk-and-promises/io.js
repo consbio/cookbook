@@ -1,7 +1,17 @@
 import fetch from 'isomorphic-fetch'
-import { getCookies } from './utils'
 
-/* `urlEncode` and `post` are I/O utility methods built on isomorphic fetch */
+/* `getCookies`, `urlEncode` and `post` are I/O utility methods built on isomorphic fetch */
+
+export const getCookies = () => {
+    let cookies = {}
+
+    document.cookie.split(';').forEach(item => {
+        let [name, value] = item.trim().split('=')
+        cookies[name] = decodeURIComponent(value)
+    })
+
+    return cookies
+}
 
 export const urlEncode = data => {
     let items = Object.keys(data).map(item => encodeURIComponent(item) + '=' + encodeURIComponent(data[item]))
