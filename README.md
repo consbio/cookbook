@@ -7,4 +7,4 @@ This is a shared repository of code snippets and ideas that may be useful in the
 
 * Javascript
   * React-Redux
-    * [Polling with Redux Thunks and Javascript ES6 Promises](javascript/react-redux/polling-tasks-with-redux-thunk-and-promises/)
+    * [Polling with Redux Thunks and Javascript ES6 Promises](javascript/react-redux/polling-with-redux-thunk-and-promises/)
