@@ -6,10 +6,10 @@ This is a shared repository of code snippets and ideas that may be useful in the
 ## Current Recipes by Language & Topic
 
 * Bash
-  - [django](bash/explore)
-  - [django](bash/when)
-  - [django](bash/where)
-  - [django](bash/wherein)
+  - [explore (open file or dir)](bash/explore)
+  - [when (case-insensitive history search)](bash/when)
+  - [where (case-insensitive file name search)](bash/where)
+  - [wherein (case-insensitive file content search)](bash/wherein)
 
 * Javascript
   - React-Redux
