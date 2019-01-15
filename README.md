@@ -6,17 +6,17 @@ This is a shared repository of code snippets and ideas that may be useful in the
 ## Current Recipes by Language & Topic
 
 * Bash
-  * [django](bash/explore)
-  * [django](bash/when)
-  * [django](bash/where)
-  * [django](bash/wherein)
+  - [django](bash/explore)
+  - [django](bash/when)
+  - [django](bash/where)
+  - [django](bash/wherein)
 
 * Javascript
-  * React-Redux
+  - React-Redux
     * [Polling with Redux Thunks and Javascript ES6 Promises](javascript/react-redux/polling-with-redux-thunk-and-promises/)
-  * React-Router
+  - React-Router
     * [Lazy loading with react-router](javascript/react-router/lazy-loading/)
 
 * Python
-  * pytest
+  - pytest
     * [django](python/pytest/django/)
