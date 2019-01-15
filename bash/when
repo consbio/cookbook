@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#================================================================================================================
+#title           :when
+#description     :Executes case-insensitive file name searches of commands in history containing the search text
+#author          :dharvey-consbio
+#usage           :
+#   # Search commands in history with text containing "search"
+#   when search            # logged history
+#   . when search ~        # current shell history
+#   echo "search" | when
+#   echo "search" | . when
+#
+#   # Search commands in history containing any line in "search.txt"
+#   when < search.txt
+#   . when < search.txt
+#   cat search.txt | when
+#   cat search.txt | . when
+#   cat search.txt | xargs -L1 when
+#=================================================================================================================
+
+HISTFILE=~/.bash_history  # Set the history file
+HISTTIMEFORMAT='%F %T '   # Set the hitory time format
+set -o history            # Enable the history
+
+if [[ ! -t 0 ]] ; then
+
+  # Input from pipe or file (not terminal)
+  export searchfor="$(cat)"
+
+  if [[ -z $searchfor ]] ; then
+    export searchfor="$*"
+  fi
+
+else
+
+  # Input from terminal (args)
+  export searchfor="$1"
+
+fi
+
+
+
+if [[ -z $searchfor ]] ; then
+  echo "Printing full history"
+  # cat ~/.bash_history
+else
+  echo "Searching history for \"$searchfor\""
+
+  while read -r search;
+  do
+    history | grep -i --color "$search"
+  done <<< "$searchfor"
+fi

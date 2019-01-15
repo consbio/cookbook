@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#==============================================================================================================
+#title           :where
+#description     :Executes case-insensitive file name searches for files with names containing the search text
+#author          :dharvey-consbio
+#usage           :
+#   # Search for files with names containing "search"
+#   where search           # current directory
+#   where search ~         # home directory
+#   echo "search" | where
+#
+#   # Search for files named after each line in "search.txt"
+#   where < search.txt
+#   cat search.txt | where
+#   cat search.txt | xargs -L1 where
+#===============================================================================================================
+
+if [[ ! -t 0 ]] ; then
+
+  # Input from pipe or file (not terminal)
+  export searchfor="$(cat)"
+  export searchin=.
+
+  if [[ -z $searchfor ]] ; then
+    export searchfor="$*"
+  fi
+
+else
+
+  # Input from terminal (args)
+  export searchfor="$1"
+
+  if [[ -z $2 ]] ; then
+    export searchin=.
+  else
+    export searchin="$2"
+  fi
+fi
+
+if [[ -z $searchfor ]] ; then
+  echo 'Nothing to search for'
+  exit 1
+fi
+
+while read -r search;
+do
+  echo "Searching for $search in $searchin"
+  find "$searchin" -iname "*$search*"
+done <<< "$searchfor"
