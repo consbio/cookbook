@@ -4,19 +4,7 @@
 #title           :when
 #description     :Executes case-insensitive file name searches of commands in history containing the search text
 #author          :dharvey-consbio
-#usage           :
-#   # Search commands in history with text containing "search"
-#   when search            # logged history
-#   . when search ~        # current shell history
-#   echo "search" | when
-#   echo "search" | . when
-#
-#   # Search commands in history containing any line in "search.txt"
-#   when < search.txt
-#   . when < search.txt
-#   cat search.txt | when
-#   cat search.txt | . when
-#   cat search.txt | xargs -L1 when
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#when
 #=================================================================================================================
 
 HISTFILE=~/.bash_history  # Set the history file

@@ -4,16 +4,7 @@
 #title           :where
 #description     :Executes case-insensitive file name searches for files with names containing the search text
 #author          :dharvey-consbio
-#usage           :
-#   # Search for files with names containing "search"
-#   where search           # current directory
-#   where search ~         # home directory
-#   echo "search" | where
-#
-#   # Search for files named after each line in "search.txt"
-#   where < search.txt
-#   cat search.txt | where
-#   cat search.txt | xargs -L1 where
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#where
 #===============================================================================================================
 
 if [[ ! -t 0 ]] ; then

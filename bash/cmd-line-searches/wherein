@@ -4,16 +4,7 @@
 #title           :wherein
 #description     :This script executes case-insensitive searches within files for lines containing the search text
 #author          :dharvey-consbio
-#usage           :
-#   # Search for text in files
-#   wherein search           # current directory
-#   wherein search ~         # home directory
-#   echo "search" | wherein
-#
-#   # Search for lines in files containing any line in "search.txt"
-#   wherein < search.txt
-#   cat search.txt | wherein
-#   cat search.txt | xargs -L1 wherein
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#wherein
 #===================================================================================================================
 
 if [[ ! -t 0 ]] ; then
