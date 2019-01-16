@@ -7,7 +7,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
 
 * Bash
   - [Command Line Searches](bash/cmd-line-searches/)
-  - [explore (open file or dir)](bash/explore)
+  - [Command Line Utilities](bash/cmd-line-utilities)
 
 * Javascript
   - React-Redux

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#======================================================================================================
+#title           :explore
+#description     :Opens a specified file or directory given a path to it (Ubuntu XFCE-specific)
+#author          :dharvey-consbio
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-utilities/#explore
+#======================================================================================================
+
+export openfile="$1"
+
+if [[ -z $openfile ]] ; then
+  xdg-open ./
+elif [[ -d $openfile ]]; then
+  xdg-open "$1"
+elif [[ -f $openfile ]]; then
+  gedit "$1"
+else
+  echo "$1 is not a file"
+  exit 1
+fi
