@@ -27,8 +27,6 @@ else
 
 fi
 
-
-
 if [[ -z $searchfor ]] ; then
   echo "Printing full history"
   # cat ~/.bash_history
