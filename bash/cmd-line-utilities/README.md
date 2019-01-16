@@ -15,4 +15,5 @@ The `explore` script is originally written for Xubuntu, but may be adapted by:
 ```bash
 explore "filename"       # opens in gedit as written
 explore "directoryname"  # opens in XFCE finder as written
+explore                  # opens current directory in finder
 ```
