@@ -14,6 +14,8 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
     * [Polling with Redux Thunks and Javascript ES6 Promises](javascript/react-redux/polling-with-redux-thunk-and-promises/)
   - React-Router
     * [Lazy loading with react-router](javascript/react-router/lazy-loading/)
+  - React-Crossfilter
+    * [A simple React wrapper for crossfilter](javascript/react-crossfilter/)
 
 * Python
   - pytest
