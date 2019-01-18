@@ -10,4 +10,4 @@ The component is defined in `./src/CrossFilter/index.js`. It requires `data` and
 See `./src/App.js` for an example of how to define dimensions and initialize and use the component. `./src/filters` has examples of how you can use and filter data in `CrossFilter` children.
 
 Here is a live demo of this component:
-https://consbio.github.io/cookbook/javascript/react-crossfilter/build/index.html
+[https://consbio.github.io/cookbook/javascript/react-crossfilter/build/index.html](https://consbio.github.io/cookbook/javascript/react-crossfilter/build/index.html)
