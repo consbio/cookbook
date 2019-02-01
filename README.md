@@ -16,6 +16,8 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
     * [Lazy loading with react-router](javascript/react-router/lazy-loading/)
   - React-Crossfilter
     * [A simple React wrapper for crossfilter](javascript/react-crossfilter/)
+  - Piecewise-linear-scaling
+    * [A gist for mapping a single linear range to several consecutive linear ranges](javascript/piecewise-linear-scaling)
 
 * Python
   - pytest
