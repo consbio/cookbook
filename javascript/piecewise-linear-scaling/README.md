@@ -6,14 +6,14 @@ A convenient way to allow a user to select a value is with a slider, but sometim
 <br/>
 
 |-------------|-------------|-------------|--------------|<br/>
-&nbsp;&nbsp;Very Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Very High
+&nbsp;&nbsp;Very Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Very High
 
 
 are the following break points:
 
 
 |-------------|-------------|-------------|--------------|<br/>
-0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 95 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100
+0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 95 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100
 
 
 A piecewise linear scaling function helps you figure out that a handle here:
@@ -32,7 +32,7 @@ means 97.5, even though the slider itself reports these handles are at 12.5 and 
 
 The piecewise linear scaling function takes a slider value and returns its actual value. In this example:
 
-12.5 -> 5
+12.5 -> 5 <br/>
 87.5 -> 97.5
 
 That's it. Enjoy! I've also included the inverse function (to go backwards).
