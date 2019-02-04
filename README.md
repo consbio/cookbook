@@ -17,7 +17,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
   - React-Crossfilter
     * [A simple React wrapper for crossfilter](javascript/react-crossfilter/)
   - Piecewise-linear-scaling
-    * [A gist for mapping a single linear range to several consecutive linear ranges](javascript/piecewise-linear-scaling)
+    * [A gist for mapping a single linear function with domain [0, x] to many linear functions whose domains are continuous: [a, b], [b, c], [c, d], ... (javascript/piecewise-linear-scaling)
 
 * Python
   - pytest
