@@ -16,7 +16,7 @@ are the following break points:
 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 95 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100
 
 
-A piecewise linear scaling function helps you figure out that a handle here:
+This piecewise linear scaling function helps you figure out that a handle here:
 
 
 |------X------|-------------|-------------|--------------|<br/>
@@ -30,9 +30,9 @@ and here:
 
 means 97.5, even though the slider itself reports these handles are at 12.5 and 87.5 (on a 0 - 100 scale) respectively.
 
-The piecewise linear scaling function takes a slider value and returns its actual value. In this example:
+This piecewise linear scaling function takes a slider value and returns its actual value. In this example:
 
 12.5 -> 5 <br/>
 87.5 -> 97.5
 
-That's it. Enjoy! I've also included the inverse function (to go backwards).
+That's it. Enjoy! I've also included the inverse function to go backwards.
