@@ -1,5 +1,5 @@
 ### What's this?
-This is a gist for a piecewise linear scaling function.
+This is a gist for mapping a single linear function with domain \[0, x\] to many linear functions whose domains are continuous: \[a, b\], \[b, c\], \[c, d\], ...
 
 ### What's that?
 A convenient way to allow a user to select a value is with a slider, but sometimes the user doesn't know (or you don't want to show them) the actual values underlying the slider. For example, underlying the following user-facing slider:
