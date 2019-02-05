@@ -16,8 +16,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
     * [Lazy loading with react-router](javascript/react-router/lazy-loading/)
   - React-Crossfilter
     * [A simple React wrapper for crossfilter](javascript/react-crossfilter/)
-  - A tool for adjusting slider values
-    * [Piecewise linear scaling](javascript/piecewise-linear-scaling)
+  - [Piecewise linear scaling](javascript/piecewise-linear-scaling)
 
 * Python
   - pytest
