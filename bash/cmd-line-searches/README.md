@@ -38,7 +38,6 @@ You may also search in another directory:
 
 ```bash
 howmuch /usr/local
-Searching in /usr/local
 490M    total
 58M     lib
 38M     share

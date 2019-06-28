@@ -10,13 +10,12 @@
 export GLOBIGNORE=".:.."
 
 if [[ -z $1 ]] ; then
-  export searchin=.
+  export checkdir=.
 else
-  export searchin="$1"
-  echo "Searching in $searchin"
+  export checkdir="$1"
 fi
 
-cd $searchin
+cd $checkdir
 
 if [[ -e ".*" ]] ; then
   du -chs .[!.]* * |sort -r --human-numeric-sort |head -11
