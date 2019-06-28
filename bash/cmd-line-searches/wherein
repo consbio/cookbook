@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #==================================================================================================================
 #title           :wherein
 #description     :This script executes case-insensitive searches within files for lines containing the search text
 #author          :dharvey-consbio
 #usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#wherein
-#===================================================================================================================
+#==================================================================================================================
 
 if [[ ! -t 0 ]] ; then
 

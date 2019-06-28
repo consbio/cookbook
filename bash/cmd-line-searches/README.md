@@ -25,32 +25,28 @@ The `howmuch` script wraps a call to `du`, and may be used as follows:
 cd /usr/local
 howmuch
 490M    total
-369M    go
 58M     lib
 38M     share
 24M     bin
 3.3M    include
-4.0K    src
 4.0K    sbin
 4.0K    .hidden
-4.0K    games
 4.0K    etc
 ```
 
-If there are no hidden files in the directory, you may get this message:
+You may also search in another directory:
+
 ```bash
-du: cannot access '.[!.]*': No such file or directory
+howmuch /usr/local
+Searching in /usr/local
 490M    total
-369M    go
 58M     lib
 38M     share
 24M     bin
 3.3M    include
-4.0K    src
 4.0K    sbin
-4.0K    games
+4.0K    .hidden
 4.0K    etc
-0       man
 ```
 
 ### `where`

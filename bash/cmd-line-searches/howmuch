@@ -1,10 +1,25 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#================================================================================================================
+#=======================================================================================================
 #title           :howmuch
-#description     :Presents a list of size of files in current directory human readably, and sorted descending
+#description     :Lists sizes of all files in specified directory human readably, and sorted descending
 #author          :dharvey-consbio
 #usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#howmuch
-#=================================================================================================================
+#=======================================================================================================
 
-du -chs .[!.]* * |sort -r --human-numeric-sort |head -11
+export GLOBIGNORE=".:.."
+
+if [[ -z $1 ]] ; then
+  export searchin=.
+else
+  export searchin="$1"
+  echo "Searching in $searchin"
+fi
+
+cd $searchin
+
+if [[ -e ".*" ]] ; then
+  du -chs .[!.]* * |sort -r --human-numeric-sort |head -11
+else
+  du -chs * |sort -r --human-numeric-sort |head -11
+fi
