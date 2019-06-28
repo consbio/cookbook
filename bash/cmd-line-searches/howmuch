@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#================================================================================================================
+#title           :howmuch
+#description     :Presents a list of size of files in current directory human readably, and sorted descending
+#author          :dharvey-consbio
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#howmuch
+#=================================================================================================================
+
+du -chs .[!.]* * |sort -r --human-numeric-sort |head -11
