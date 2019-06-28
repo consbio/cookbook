@@ -4,7 +4,7 @@
 #title           :howmuch
 #description     :Lists sizes of all files in specified directory human readably, and sorted descending
 #author          :dharvey-consbio
-#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#howmuch
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-utilities/#howmuch
 #=======================================================================================================
 
 export GLOBIGNORE=".:.."
