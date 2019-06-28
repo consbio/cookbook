@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #==============================================================================================================
 #title           :where
 #description     :Executes case-insensitive file name searches for files with names containing the search text
 #author          :dharvey-consbio
 #usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#where
-#===============================================================================================================
+#==============================================================================================================
 
 if [[ ! -t 0 ]] ; then
 

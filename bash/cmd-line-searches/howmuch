@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+#=======================================================================================================
+#title           :howmuch
+#description     :Lists sizes of all files in specified directory human readably, and sorted descending
+#author          :dharvey-consbio
+#usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-searches/#howmuch
+#=======================================================================================================
+
+export GLOBIGNORE=".:.."
+
+if [[ -z $1 ]] ; then
+  export checkdir=.
+else
+  export checkdir="$1"
+fi
+
+cd $checkdir
+
+if [[ -e ".*" ]] ; then
+  du -chs .[!.]* * |sort -r --human-numeric-sort |head -11
+else
+  du -chs * |sort -r --human-numeric-sort |head -11
+fi
