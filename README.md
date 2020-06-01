@@ -21,3 +21,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details on how to organize and co
 * Python
   - pytest
     * [django](python/pytest/django/)
+    
+* CSS
+  - [Site-wide Focus Styling](css/focus)

@@ -1,0 +1,17 @@
+/* Removes dotted white outline on button text in Firefox */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+    border: none;
+}
+
+/* Makes focus outline/halo uniform across browsers. Color is inherited from the element, which will
+likely not be the same as background color: */
+:focus {
+  outline: thin dotted !important;
+  -moz-outline: thin dotted !important;
+  -ms-outline:thin dotted !important;
+  -o-outline: thin dotted !important;
+  -webkit-outline: thin dotted !important;
+}
