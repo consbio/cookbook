@@ -16,6 +16,11 @@ The `explore` script is originally written for Xubuntu, but may be adapted by:
 explore "filename"       # opens in gedit as written
 explore "directoryname"  # opens in XFCE finder as written
 explore                  # opens current directory in finder
+
+# Input from pipe or file
+echo "filename" > explore.txt
+explore < explore.txt
+cat explore.txt | explore
 ```
 
 ### `howmuch`
@@ -47,4 +52,9 @@ howmuch /usr/local
 4.0K    sbin
 4.0K    .hidden
 4.0K    etc
+
+# Input from pipe or file
+echo "/usr/local" > howmuch.txt
+howmuch < howmuch.txt
+cat howmuch.txt | howmuch
 ```

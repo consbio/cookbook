@@ -9,13 +9,21 @@
 
 export GLOBIGNORE=".:.."
 
-if [[ -z $1 ]] ; then
+if [[ ! -t 0 ]] ; then
+  # Input from pipe or file (not terminal)
+  export checkdir="$(cat)"
+elif [[ -z $1 ]] ; then
   export checkdir=.
 else
   export checkdir="$1"
 fi
 
-cd $checkdir
+if [[ -d $checkdir ]]; then
+  cd $checkdir
+else
+  echo "$checkdir is not a directory"
+  exit 1
+fi
 
 if [[ -e ".*" ]] ; then
   du -chs .[!.]* * |sort -r --human-numeric-sort |head -11

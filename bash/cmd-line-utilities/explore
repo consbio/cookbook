@@ -7,15 +7,21 @@
 #usage           :see https://github.com/consbio/cookbook/tree/master/bash/cmd-line-utilities/#explore
 #======================================================================================================
 
-export openfile="$1"
+if [[ ! -t 0 ]] ; then
+  # Input from pipe or file (not terminal)
+  export openfile="$(cat)"
+else
+  # Input from terminal (args)
+  export openfile="$1"
+fi
 
 if [[ -z $openfile ]] ; then
   xdg-open ./
 elif [[ -d $openfile ]]; then
-  xdg-open "$1"
+  xdg-open "$openfile"
 elif [[ -f $openfile ]]; then
-  gedit "$1"
+  gedit "$openfile"
 else
-  echo "$1 is not a file"
+  echo "$openfile is not a file"
   exit 1
 fi
