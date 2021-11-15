@@ -29,7 +29,7 @@ fi
 
 if [[ -z $searchfor ]] ; then
   echo "Printing full history"
-  # cat ~/.bash_history
+  history
 else
   echo "Searching history for \"$searchfor\""
 
